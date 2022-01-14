@@ -1,0 +1,70 @@
+﻿@model AplicacionWeb.Models.ReporteViewModel
+
+@{
+    ViewData["Title"] = "Reporte Estado de Cuenta";
+}
+
+<h1>Reporte Estados de Cuenta</h1>
+
+<h4>@Model.Cliente</h4>
+<h5>Desde: @Model.FechaDesde.ToString("yyyy/MM/dd") - Hasta: @Model.FechaHasta.ToString("yyyy/MM/dd")</h5>
+
+<div asp-validation-summary="All" class="text-danger"></div>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                NumeroCuenta
+            </th>
+            <th>
+                FechCorte
+            </th>
+            <th>
+                SaldoFinal
+            </th>
+            <th>
+                Creditos
+            </th>
+            <th>
+                TotalCreditos
+            </th>
+            <th>
+                Debitos
+            </th>
+            <th>
+                TotalDebitos
+            </th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model.EstadosCuenta) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.NumeroCuenta)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.FechaCorte)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.SaldoFinal)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Creditos)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.TotalCreditos)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Debitos)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.TotalDebitos)
+            </td>
+        </tr>
+}
+    </tbody>
+</table>
+
+<div>
+    <a class="btn btn-info" asp-action="Index">Regresar</a>
+</div>
