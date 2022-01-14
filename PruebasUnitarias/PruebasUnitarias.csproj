@@ -15,8 +15,4 @@
     <ProjectReference Include="..\LogicaNegocio\LogicaNegocio.csproj" />
   </ItemGroup>
 
-  <ItemGroup>
-    <Folder Include="MockRepositorios\" />
-  </ItemGroup>
-
 </Project>

@@ -1,11 +1,12 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Text;
 using System.Threading.Tasks;
 
-namespace AplicacionWeb.Models
+namespace PruebasUnitarias
 {
-    public class LoginModel
+    class CuentasTests
     {
     }
 }

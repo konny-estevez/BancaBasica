@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq.Expressions;
 using Bogus;
 
-namespace CA.RemitHub.Domain.Test.Fakes
+namespace PruebasUnitarias.Fakers
 {
     public abstract class FakerBase<TEntity> where TEntity : class
     {

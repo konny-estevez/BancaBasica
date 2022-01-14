@@ -3,7 +3,7 @@
 namespace PruebasUnitarias
 {
     [TestClass]
-    class ClientesTest
+    class ClientesTests
     {
         [TestMethod]
         public void CrearCliente_Valido()

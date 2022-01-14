@@ -8,7 +8,7 @@ using System.Collections.Generic;
 namespace PruebasUnitarias
 {
     [TestClass]
-    public class MovimientosTest
+    public class MovimientosTests
     {
         private Movimientos logicaNegocio = new Movimientos(null, null, null, null);
 
