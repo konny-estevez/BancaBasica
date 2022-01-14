@@ -13,6 +13,12 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LogicaNegocio", "LogicaNego
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PruebasUnitarias", "PruebasUnitarias\PruebasUnitarias.csproj", "{949ACCCA-6328-40C4-8C9D-E8AFAEB5FF9C}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{856E6A3D-5436-4173-AB90-F4E96803690E}"
+	ProjectSection(SolutionItems) = preProject
+		Scripts\script init.sql = Scripts\script init.sql
+		Scripts\script squema.sql = Scripts\script squema.sql
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
